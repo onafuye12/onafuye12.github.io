@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oluwapelumi Onafuye - AI/ML Engineer specializing in Agentic AI, Generative AI, and MLOps">
+    <title>ThePelumiOnafuye | AI Engineer & Researcher</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav id="navbar">
+    <a href="#hero" class="nav-logo">&lt;PelumiOnafuye /&gt;</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-badge">
+            <div class="badge-dot"></div>
+            Available for Opportunities &amp; Collaborations
+        </div>
+        <h1 class="hero-name">
+            Oluwapelumi<br>
+            <span class="highlight">Onafuye</span>
+        </h1>
+        <p class="hero-role">
+            <span id="typewriter-text"></span>
+            <span class="typewriter-cursor"></span>
+        </p>
+        <p class="hero-desc">
+            Building intelligent systems at the intersection of Neural Networks and Scalable Architecture.
+            Agentic AI · Generative AI · MLOps · Emerging Markets.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+            <a href="https://onafuye12.github.io/oluwapelumi_portfolio/index.html" target="_blank" class="btn-secondary"><i class="fas fa-globe"></i> Old Portfolio</a>
+            <a href="#contact" class="btn-secondary"><i class="fas fa-envelope"></i> Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="6">0</span>
+                <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="300">0</span>
+                <span class="stat-label">Students Mentored</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="4">0</span>
+                <span class="stat-label">Certifications</span>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid fade-in">
+            <div class="about-image-wrap">
+                <!-- Save your photo as "profile.jpg" in the root folder -->
+                <img src="profile.jpg" alt="Oluwapelumi Onafuye" class="about-image"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="about-image-fallback"><i class="fas fa-user-astronaut"></i></div>
+            </div>
+            <div class="about-content">
+                <h3>// about_me</h3>
+                <h2>AI Engineer &amp; <span style="background:var(--gradient-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Researcher</span></h2>
+                <p>
+                    I'm an AI Engineer and Researcher from Lagos, Nigeria, specializing in the intersection of
+                    Neural Networks and Scalable Software Architecture. My portfolio spans agentic AI workflows,
+                    generative pipelines, and high-precision medical imaging diagnostics.
+                </p>
+                <p>
+                    Currently focused on leveraging Low-Resource NLP and Generative AI to create resilient,
+                    inclusive technology for emerging markets — improving AI systems for African languages and contexts.
+                </p>
+                <div class="about-details">
+                    <div class="about-detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><strong>Location</strong><span>Lagos, Nigeria</span></div>
+                    </div>
+                    <div class="about-detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div><strong>Degree</strong><span>B.Eng Computer Engineering</span></div>
+                    </div>
+                    <div class="about-detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><strong>Email</strong><span>onafuyepelumi@gmail.com</span></div>
+                    </div>
+                    <div class="about-detail-item">
+                        <i class="fas fa-star"></i>
+                        <div><strong>GPA (WES)</strong><span>3.54 / 4.0</span></div>
+                    </div>
+                    <div class="about-detail-item">
+                        <i class="fas fa-certificate"></i>
+                        <div><strong>Member</strong><span>GMNSE · Data Science Nigeria</span></div>
+                    </div>
+                    <div class="about-detail-item">
+                        <i class="fas fa-language"></i>
+                        <div><strong>Languages</strong><span>English · Yoruba</span></div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/onafuye12" class="social-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/oluwapelumi-onafuye-281495234/" class="social-link" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/PelumiOnafuye" class="social-link" target="_blank" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://onafuye12.github.io/oluwapelumi_portfolio/index.html" class="social-link" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
+                    <a href="mailto:onafuyepelumi@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+<section id="skills">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="section-tag">// technical_skills</p>
+            <h2 class="section-title">What I <span>Work With</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-categories">
+            <div class="skill-category fade-in">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon cyan"><i class="fas fa-brain"></i></div>
+                    <span class="skill-cat-title">ML &amp; Deep Learning</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">PyTorch</span><span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Scikit-learn</span><span class="skill-tag">Keras</span>
+                    <span class="skill-tag">Hugging Face</span><span class="skill-tag">XGBoost</span>
+                    <span class="skill-tag">LightGBM</span><span class="skill-tag">CNNs</span>
+                    <span class="skill-tag">Transformers</span><span class="skill-tag">Grad-CAM</span>
+                    <span class="skill-tag">SHAP</span><span class="skill-tag">LIME</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon purple"><i class="fas fa-robot"></i></div>
+                    <span class="skill-cat-title">Agentic &amp; Generative AI</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">LangChain</span><span class="skill-tag">LangGraph</span>
+                    <span class="skill-tag">CrewAI</span><span class="skill-tag">Phidata</span>
+                    <span class="skill-tag">RAG Systems</span><span class="skill-tag">Latent Diffusion</span>
+                    <span class="skill-tag">SDXL</span><span class="skill-tag">ControlNet</span>
+                    <span class="skill-tag">LoRA</span><span class="skill-tag">Gemini Flash</span>
+                    <span class="skill-tag">Imagen 3</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon green"><i class="fas fa-server"></i></div>
+                    <span class="skill-cat-title">MLOps &amp; Deployment</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">FastAPI</span><span class="skill-tag">Docker</span>
+                    <span class="skill-tag">MLflow</span><span class="skill-tag">Airflow</span>
+                    <span class="skill-tag">CI/CD</span><span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Azure</span><span class="skill-tag">GCP</span>
+                    <span class="skill-tag">Streamlit</span><span class="skill-tag">Flask</span>
+                    <span class="skill-tag">DVC</span><span class="skill-tag">Grafana</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon pink"><i class="fas fa-database"></i></div>
+                    <span class="skill-cat-title">Data &amp; Analytics</span>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span><span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Spark</span><span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Tableau</span><span class="skill-tag">Snowflake</span>
+                    <span class="skill-tag">ChromaDB</span><span class="skill-tag">Pinecone</span>
+                    <span class="skill-tag">OpenCV</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+<section id="experience">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="section-tag">// work_experience</p>
+            <h2 class="section-title">My <span>Journey</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Oct 2025 — Present</span>
+                <div class="timeline-card">
+                    <div class="timeline-title">AI Lead / AI Engineer</div>
+                    <div class="timeline-company">Sabi Ride &nbsp;·&nbsp; Lagos, Nigeria</div>
+                    <ul class="timeline-bullets">
+                        <li>Designed a real-time Multi-Agent AI ecosystem using LangGraph and FastAPI, orchestrating specialized agents (Pricing, Voice, Safety) with sub-second coordination latency.</li>
+                        <li>Engineered a hybrid dynamic pricing engine with XGBoost/LightGBM processing real-time traffic, weather, and event data — featuring a novel "Wait vs. Pay" cost-forecasting system (MAE ≈ ₦90).</li>
+                        <li>Spearheaded the "Sabi" Concierge Agent using RAG with a fine-tuned voice interface for Nigerian English/Pidgin achieving high intent recognition.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">LangGraph</span><span class="timeline-tag">FastAPI</span>
+                        <span class="timeline-tag">XGBoost</span><span class="timeline-tag">LightGBM</span>
+                        <span class="timeline-tag">RAG</span><span class="timeline-tag">Multi-Agent</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot purple"></div>
+                <span class="timeline-date">Jan 2025 — Present</span>
+                <div class="timeline-card">
+                    <div class="timeline-title">AI Engineer (Volunteer)</div>
+                    <div class="timeline-company">Lyngual Labs &nbsp;·&nbsp; Lagos, Nigeria</div>
+                    <ul class="timeline-bullets">
+                        <li>Validating English/Yoruba code-switched datasets to optimize tokenizer fertility rates for low-resource African languages.</li>
+                        <li>Conducting semantic accuracy audits across tonal variations to refine intent recognition in multicultural voice models.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">NLP</span><span class="timeline-tag">Low-Resource Languages</span>
+                        <span class="timeline-tag">Yoruba/English</span><span class="timeline-tag">Tokenization</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Sep 2024 — Dec 2025</span>
+                <div class="timeline-card">
+                    <div class="timeline-title">AI Engineer</div>
+                    <div class="timeline-company">Flourish AI &nbsp;·&nbsp; Lagos, Nigeria</div>
+                    <ul class="timeline-bullets">
+                        <li>Architected an end-to-end Latent Diffusion pipeline using SDXL and Dual-UNet architectures for high-fidelity virtual try-on systems.</li>
+                        <li>Engineered specialized ControlNet and LoRA adapters with DensePose for precise structural alignment between digital apparel and 3D human surfaces.</li>
+                        <li>Orchestrated an agentic vision-to-generation workflow using Gemini Flash to autonomously parse garment metadata, feeding into a localized Imagen 3 stack for 4K output.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">SDXL</span><span class="timeline-tag">ControlNet</span>
+                        <span class="timeline-tag">LoRA</span><span class="timeline-tag">DensePose</span>
+                        <span class="timeline-tag">Gemini Flash</span><span class="timeline-tag">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot purple"></div>
+                <span class="timeline-date">Jan 2024 — Apr 2025</span>
+                <div class="timeline-card">
+                    <div class="timeline-title">Freelance AI &amp; Data Science Consultant</div>
+                    <div class="timeline-company">Remote</div>
+                    <ul class="timeline-bullets">
+                        <li>Delivered end-to-end ML solutions — from exploratory analysis and feature engineering to production deployment — for multiple client-facing use cases.</li>
+                        <li>Built predictive models for fraud detection and user behavior analysis, translating data science work into measurable business value.</li>
+                        <li>Supported CI/CD for ML workflows and AWS-hosted solution delivery in startup environments.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Fraud Detection</span><span class="timeline-tag">AWS</span>
+                        <span class="timeline-tag">CI/CD</span><span class="timeline-tag">MLflow</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot green"></div>
+                <span class="timeline-date">Jun 2023 — Jul 2024</span>
+                <div class="timeline-card">
+                    <div class="timeline-title">Data Science / ML Community Manager</div>
+                    <div class="timeline-company">OOU Tech Community &nbsp;·&nbsp; Ogun State, Nigeria</div>
+                    <ul class="timeline-bullets">
+                        <li>Increased active student engagement by 30% through hands-on AI workshops and project-based learning.</li>
+                        <li>Supervised 200+ students, resulting in a 25% increase in successful project completion rates.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Teaching</span><span class="timeline-tag">Mentorship</span><span class="timeline-tag">ML Education</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">Jan 2023 — Jul 2023</span>
+                <div class="timeline-card">
+                    <div class="timeline-title">Data Scientist</div>
+                    <div class="timeline-company">DataLab Analytics &nbsp;·&nbsp; Abuja, Nigeria</div>
+                    <ul class="timeline-bullets">
+                        <li>Enhanced model accuracy by 15% through advanced data preprocessing, feature engineering, and hyperparameter tuning.</li>
+                        <li>Developed KPI dashboards and real-time visualizations using Power BI for client reporting.</li>
+                        <li>Authored AI-focused technical articles, increasing readership engagement by 40%.</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Python</span><span class="timeline-tag">Power BI</span>
+                        <span class="timeline-tag">Feature Engineering</span><span class="timeline-tag">Predictive Modeling</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+<section id="projects">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="section-tag">// featured_projects</p>
+            <h2 class="section-title">What I've <span>Built</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-icon">🤖</div>
+                <div class="project-title">Real-Time Multi-Agent AI Ecosystem</div>
+                <p class="project-desc">Hub-and-spoke architecture using LangGraph and FastAPI orchestrating specialized AI agents (Pricing, Voice, Safety) with sub-second coordination latency for a ride-hailing platform.</p>
+                <div class="project-stack">
+                    <span class="stack-badge">LangGraph</span><span class="stack-badge">FastAPI</span>
+                    <span class="stack-badge">Multi-Agent</span><span class="stack-badge">RAG</span><span class="stack-badge">Python</span>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-icon">💸</div>
+                <div class="project-title">AI Hybrid Dynamic Pricing Engine</div>
+                <p class="project-desc">Production-grade XGBoost/LightGBM engine processing real-time traffic, weather, and event data. Features a novel "Wait vs. Pay" cost-forecasting system with MAE ≈ ₦90, RMSE ≈ ₦139.</p>
+                <div class="project-stack">
+                    <span class="stack-badge">XGBoost</span><span class="stack-badge">LightGBM</span>
+                    <span class="stack-badge">FastAPI</span><span class="stack-badge">Synthetic Data</span><span class="stack-badge">MLflow</span>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-icon">👗</div>
+                <div class="project-title">Virtual Try-On Diffusion Pipeline</div>
+                <p class="project-desc">End-to-end Latent Diffusion pipeline using SDXL and Dual-UNet with ControlNet/LoRA adapters for high-fidelity garment preservation and 4K studio-quality output.</p>
+                <div class="project-stack">
+                    <span class="stack-badge">SDXL</span><span class="stack-badge">ControlNet</span>
+                    <span class="stack-badge">LoRA</span><span class="stack-badge">DensePose</span><span class="stack-badge">Gemini Flash</span>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-icon">🧠</div>
+                <div class="project-title">MRI Brain Tumor Classification</div>
+                <p class="project-desc">Comparative analysis of CNN architectures (InceptionV3, ResNet50, VGG16, EfficientNetV2L) achieving 94.84% accuracy with Grad-CAM explainability for clinical interpretability.</p>
+                <div class="project-stack">
+                    <span class="stack-badge">PyTorch</span><span class="stack-badge">CNNs</span>
+                    <span class="stack-badge">Grad-CAM</span><span class="stack-badge">Medical AI</span><span class="stack-badge">EfficientNet</span>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-icon">🔍</div>
+                <div class="project-title">Autonomous RAG AI Agent</div>
+                <p class="project-desc">Retrieval-augmented system integrating APIs and LLMs to generate real-time insights through automated data retrieval, knowledge graph construction, and intelligent processing.</p>
+                <div class="project-stack">
+                    <span class="stack-badge">RAG</span><span class="stack-badge">LangChain</span>
+                    <span class="stack-badge">ChromaDB</span><span class="stack-badge">LLM</span><span class="stack-badge">Python</span>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-icon">📡</div>
+                <div class="project-title">Telecom Customer Churn Prediction</div>
+                <p class="project-desc">ML model predicting telecom customer churn to support retention strategies, revenue optimization, and data-driven business decision-making with actionable Power BI dashboards.</p>
+                <div class="project-stack">
+                    <span class="stack-badge">Scikit-learn</span><span class="stack-badge">Feature Eng.</span>
+                    <span class="stack-badge">Classification</span><span class="stack-badge">Power BI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ EDUCATION ═══════════════════════════ -->
+<section id="education">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="section-tag">// education</p>
+            <h2 class="section-title">Academic <span>Background</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="education-card fade-in">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-content">
+                <h3>B.Eng Computer Engineering</h3>
+                <h4>Olabisi Onabanjo University &nbsp;·&nbsp; Ago-Iwoye, Ogun State, Nigeria</h4>
+                <div class="edu-meta">
+                    <div class="edu-meta-item"><i class="fas fa-calendar-alt"></i><span>2018 – 2024</span></div>
+                    <div class="edu-meta-item"><i class="fas fa-award"></i><span>Second Class (Honours) Upper Division</span></div>
+                    <div class="edu-meta-item"><i class="fas fa-globe-americas"></i><span>WES Equivalent: 3.54 / 4.0 GPA</span></div>
+                </div>
+                <div class="edu-highlight">
+                    <i class="fas fa-flask"></i>
+                    Final Project (CPE599): CNN MRI Brain Tumor Classification &mdash; Grade A (82%)
+                </div>
+                <div class="edu-courses">
+                    <h5>Relevant Coursework</h5>
+                    <div class="courses-tags">
+                        <span class="course-tag">Artificial Intelligence</span>
+                        <span class="course-tag">Software Engineering</span>
+                        <span class="course-tag">Database Systems</span>
+                        <span class="course-tag">Operating Systems</span>
+                        <span class="course-tag">Real-Time Systems</span>
+                        <span class="course-tag">Computer Networks</span>
+                        <span class="course-tag">Distributed Systems</span>
+                        <span class="course-tag">Digital Signal Processing</span>
+                        <span class="course-tag">Embedded Systems</span>
+                        <span class="course-tag">Advanced Engineering Mathematics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ CERTIFICATIONS ═══════════════════════════ -->
+<section id="certifications">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="section-tag">// certifications_&_awards</p>
+            <h2 class="section-title">Credentials &amp; <span>Recognition</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="certs-grid">
+            <div class="cert-card fade-in">
+                <div class="cert-icon" style="background:rgba(0,229,255,0.1);color:var(--accent-cyan)"><i class="fas fa-robot"></i></div>
+                <div>
+                    <div class="cert-name">Agentic AI &amp; GenAI with Cloud</div>
+                    <div class="cert-issuer">LangChain · LangGraph · CrewAI · AWS · GCP</div>
+                </div>
+            </div>
+            <div class="cert-card fade-in">
+                <div class="cert-icon" style="background:rgba(139,92,246,0.1);color:var(--accent-purple)"><i class="fas fa-infinity"></i></div>
+                <div>
+                    <div class="cert-name">MLOps Bootcamp</div>
+                    <div class="cert-issuer">Docker · CI/CD · MLflow · Airflow · DVC · MongoDB</div>
+                </div>
+            </div>
+            <div class="cert-card fade-in">
+                <div class="cert-icon" style="background:rgba(0,255,136,0.1);color:var(--accent-green)"><i class="fas fa-microchip"></i></div>
+                <div>
+                    <div class="cert-name">NVIDIA Deep Learning Institute</div>
+                    <div class="cert-issuer">Generative AI · Synthetic Data · GPU Acceleration</div>
+                </div>
+            </div>
+            <div class="cert-card fade-in">
+                <div class="cert-icon" style="background:rgba(244,114,182,0.1);color:var(--accent-pink)"><i class="fas fa-chart-line"></i></div>
+                <div>
+                    <div class="cert-name">Data Science Certifications</div>
+                    <div class="cert-issuer">DataCamp · Multiple Courses &amp; Tracks</div>
+                </div>
+            </div>
+        </div>
+        <div class="awards-grid">
+            <div class="award-card fade-in">
+                <div class="award-icon">🏆</div>
+                <div class="award-name">Tech Innovator of the Year</div>
+                <div class="award-org">Department of Computer Engineering · OOU, 2023</div>
+            </div>
+            <div class="award-card fade-in">
+                <div class="award-icon">⭐</div>
+                <div class="award-name">Exceptional Mentorship Award</div>
+                <div class="award-org">Department of Computer Engineering · OOU, 2023</div>
+            </div>
+            <div class="award-card fade-in">
+                <div class="award-icon">🎵</div>
+                <div class="award-name">Best Drummer</div>
+                <div class="award-org">Campus Drum Clinic · OOU, 2023</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section id="contact">
+    <div class="container">
+        <div class="section-header fade-in">
+            <p class="section-tag">// contact_me</p>
+            <h2 class="section-title">Let's <span>Connect</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info fade-in">
+                <h3>Got a project in mind?</h3>
+                <p>I'm open to collaborations, research opportunities, and interesting AI/ML projects.
+                Whether it's building intelligent systems, consulting on ML strategy, or exploring
+                new frontiers in Generative AI — let's talk.</p>
+                <div class="contact-items">
+                    <a href="mailto:onafuyepelumi@gmail.com" class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                        onafuyepelumi@gmail.com
+                    </a>
+                    <a href="tel:+2348077603767" class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                        (+234) 8077603767
+                    </a>
+                    <a href="https://www.linkedin.com/in/oluwapelumi-onafuye-281495234/" class="contact-item" target="_blank">
+                        <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+                        linkedin.com/in/oluwapelumi-onafuye
+                    </a>
+                    <a href="https://github.com/onafuye12" class="contact-item" target="_blank">
+                        <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+                        github.com/onafuye12
+                    </a>
+                    <a href="https://x.com/PelumiOnafuye" class="contact-item" target="_blank">
+                        <div class="contact-item-icon"><i class="fab fa-x-twitter"></i></div>
+                        x.com/PelumiOnafuye
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form fade-in">
+                <!-- Formspree: replace YOUR_FORM_ID after signing up at formspree.io -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <input type="hidden" name="_subject" value="New message from portfolio">
+                    <input type="hidden" name="_replyto" value="">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Tell me about your project or opportunity..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div class="form-divider"><span>or reach me directly</span></div>
+                    <a href="https://wa.me/2348077603767?text=Hi%20Pelumi%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!"
+                       target="_blank" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+    <p>Designed &amp; Built by <span>ThePelumiOnafuye</span> &nbsp;·&nbsp;
+        <span style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;">&lt;AI Engineer · Researcher · Builder /&gt;</span>
+    </p>
+    <p style="margin-top:0.5rem;font-size:0.73rem;color:var(--text-muted);">
+        Lagos, Nigeria &copy; 2025 &nbsp;·&nbsp;
+        <a href="mailto:onafuyepelumi@gmail.com">onafuyepelumi@gmail.com</a>
+    </p>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/2348077603767?text=Hi%20Pelumi%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!"
+   target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Script -->
+<script src="js/main.js"></script>
+</body>
+</html>
