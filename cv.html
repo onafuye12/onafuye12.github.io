@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Oluwapelumi Onafuye | AI/ML Engineer</title>
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #f5f5f5;
+        }
+
+        /* ── Page Container ── */
+        .page {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 18mm 20mm;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+        }
+
+        /* ── Header ── */
+        .cv-header {
+            border-bottom: 2.5px solid #1a56db;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+        .cv-name {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+        }
+        .cv-title {
+            font-size: 13pt;
+            color: #1a56db;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+        .cv-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 20px;
+            margin-top: 10px;
+            font-size: 9.5pt;
+            color: #374151;
+        }
+        .cv-contact a { color: #1a56db; text-decoration: none; }
+        .cv-contact span { display: flex; align-items: center; gap: 4px; }
+
+        /* ── Sections ── */
+        .cv-section { margin-bottom: 18px; }
+        .cv-section-title {
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #0f172a;
+            border-bottom: 1.5px solid #1a56db;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+
+        /* ── Summary ── */
+        .cv-summary { font-size: 10.5pt; color: #374151; }
+
+        /* ── Experience ── */
+        .exp-item { margin-bottom: 13px; }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .exp-role { font-weight: 700; font-size: 11pt; color: #0f172a; }
+        .exp-date { font-size: 9.5pt; color: #6b7280; white-space: nowrap; }
+        .exp-company { font-size: 10pt; color: #1a56db; font-weight: 600; margin-bottom: 4px; }
+        .exp-bullets { padding-left: 16px; margin-top: 4px; }
+        .exp-bullets li { font-size: 10pt; color: #374151; margin-bottom: 2px; }
+
+        /* ── Skills ── */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 24px;
+        }
+        .skill-row { font-size: 10pt; color: #374151; }
+        .skill-row strong { color: #0f172a; }
+
+        /* ── Education ── */
+        .edu-item { margin-bottom: 10px; }
+        .edu-degree { font-weight: 700; font-size: 11pt; color: #0f172a; }
+        .edu-school { font-size: 10pt; color: #1a56db; font-weight: 600; }
+        .edu-meta { font-size: 9.5pt; color: #6b7280; margin-top: 2px; }
+
+        /* ── Certifications ── */
+        .cert-item { margin-bottom: 5px; font-size: 10pt; color: #374151; }
+        .cert-item strong { color: #0f172a; }
+
+        /* ── Awards ── */
+        .award-item { font-size: 10pt; color: #374151; margin-bottom: 4px; }
+        .award-item strong { color: #0f172a; }
+
+        /* ── Download Bar (screen only) ── */
+        .download-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #0f172a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 24px;
+            gap: 12px;
+        }
+        .download-bar span { color: #94a3b8; font-size: 9.5pt; font-family: Arial, sans-serif; }
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: #1a56db;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 18px;
+            font-size: 10pt;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+        .dl-btn:hover { background: #1e40af; }
+        .back-link {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 9.5pt;
+            font-family: Arial, sans-serif;
+        }
+        .back-link:hover { color: #e2e8f0; }
+
+        /* ── Print ── */
+        @media print {
+            body { background: #fff; }
+            .download-bar { display: none !important; }
+            .page {
+                max-width: 100%;
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Screen-only download bar -->
+<div class="download-bar">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <span>To save as PDF: click "Download PDF" → Print → Save as PDF</span>
+    <button class="dl-btn" onclick="window.print()">⬇ Download PDF</button>
+</div>
+
+<div class="page">
+
+    <!-- ── Header ── -->
+    <header class="cv-header">
+        <div class="cv-name">Oluwapelumi Peter Onafuye</div>
+        <div class="cv-title">AI/ML Engineer &amp; Researcher · Agentic AI Specialist</div>
+        <div class="cv-contact">
+            <span>📍 Lagos, Nigeria</span>
+            <span>📞 <a href="tel:+2348077603767">+234 807 760 3767</a></span>
+            <span>✉ <a href="mailto:onafuyepelumi@gmail.com">onafuyepelumi@gmail.com</a></span>
+            <span>🔗 <a href="https://onafuye12.github.io" target="_blank">onafuye12.github.io</a></span>
+            <span>💼 <a href="https://linkedin.com/in/oluwapelumi-onafuye-281495234" target="_blank">linkedin.com/in/oluwapelumi-onafuye</a></span>
+            <span>⚙ <a href="https://github.com/onafuye12" target="_blank">github.com/onafuye12</a></span>
+        </div>
+    </header>
+
+    <!-- ── Professional Summary ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Professional Summary</h2>
+        <p class="cv-summary">
+            AI/ML Engineer and Researcher with 3+ years of experience building production-grade intelligent systems.
+            Specializes in Agentic AI workflows (LangGraph, LangChain, CrewAI), Generative AI (SDXL, ControlNet, LoRA),
+            and scalable MLOps pipelines (Docker, MLflow, FastAPI). Proven record delivering real-time multi-agent
+            ecosystems, hybrid dynamic pricing engines, and low-resource NLP solutions for emerging markets.
+            Deep passion for leveraging AI to solve high-impact problems across African markets.
+        </p>
+    </section>
+
+    <!-- ── Work Experience ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Work Experience</h2>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">AI Lead / AI Engineer</span>
+                <span class="exp-date">Oct 2025 – Present</span>
+            </div>
+            <div class="exp-company">Sabi Ride · Lagos, Nigeria</div>
+            <ul class="exp-bullets">
+                <li>Designed a real-time Multi-Agent AI ecosystem using LangGraph and FastAPI, orchestrating specialized agents (Pricing, Voice, Safety) with sub-second coordination latency.</li>
+                <li>Engineered a hybrid dynamic pricing engine (XGBoost/LightGBM) processing real-time traffic, weather, and event data — novel "Wait vs. Pay" cost-forecasting system achieving MAE ≈ ₦90, RMSE ≈ ₦139.</li>
+                <li>Built the "Sabi" Concierge Agent using RAG with a fine-tuned voice interface for Nigerian English/Pidgin, achieving high intent recognition across edge-device deployments.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">AI Engineer (Volunteer)</span>
+                <span class="exp-date">Jan 2025 – Present</span>
+            </div>
+            <div class="exp-company">Lyngual Labs · Lagos, Nigeria</div>
+            <ul class="exp-bullets">
+                <li>Validating English/Yoruba code-switched datasets to optimize tokenizer fertility rates for low-resource African languages.</li>
+                <li>Conducting semantic accuracy audits across tonal variations to refine intent recognition in multicultural voice models.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">AI Engineer</span>
+                <span class="exp-date">Sep 2024 – Dec 2025</span>
+            </div>
+            <div class="exp-company">Flourish AI · Lagos, Nigeria</div>
+            <ul class="exp-bullets">
+                <li>Architected an end-to-end Latent Diffusion pipeline using SDXL and Dual-UNet architectures for high-fidelity virtual try-on systems (4K studio-quality output).</li>
+                <li>Engineered specialized ControlNet and LoRA adapters with DensePose for precise structural alignment between digital apparel and 3D human surfaces.</li>
+                <li>Orchestrated an agentic vision-to-generation workflow using Gemini Flash to autonomously parse garment metadata into a localized Imagen 3 generation stack.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">Freelance AI &amp; Data Science Consultant</span>
+                <span class="exp-date">Jan 2024 – Apr 2025</span>
+            </div>
+            <div class="exp-company">Remote</div>
+            <ul class="exp-bullets">
+                <li>Delivered end-to-end ML solutions — from exploratory analysis and feature engineering to production deployment — for multiple client-facing use cases including fraud detection and user behavior analysis.</li>
+                <li>Supported CI/CD for ML workflows and AWS-hosted solution delivery in startup environments.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">Data Science / ML Community Manager</span>
+                <span class="exp-date">Jun 2023 – Jul 2024</span>
+            </div>
+            <div class="exp-company">OOU Tech Community · Ogun State, Nigeria</div>
+            <ul class="exp-bullets">
+                <li>Increased active student engagement by 30% through hands-on AI workshops and project-based learning.</li>
+                <li>Supervised 200+ students, resulting in a 25% increase in successful project completion rates.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">Data Scientist</span>
+                <span class="exp-date">Jan 2023 – Jul 2023</span>
+            </div>
+            <div class="exp-company">DataLab Analytics · Abuja, Nigeria</div>
+            <ul class="exp-bullets">
+                <li>Enhanced model accuracy by 15% through advanced data preprocessing, feature engineering, and hyperparameter tuning.</li>
+                <li>Developed KPI dashboards and real-time visualizations using Power BI for client reporting.</li>
+                <li>Authored AI-focused technical articles, increasing readership engagement by 40%.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ── Education ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Education</h2>
+        <div class="edu-item">
+            <div class="edu-degree">Bachelor of Engineering (B.Eng) — Computer Engineering</div>
+            <div class="edu-school">Olabisi Onabanjo University · Ago-Iwoye, Ogun State, Nigeria</div>
+            <div class="edu-meta">
+                2018 – 2024 &nbsp;·&nbsp; Second Class (Honours) Upper Division &nbsp;·&nbsp; WES Equivalent GPA: 3.54 / 4.0
+            </div>
+            <div class="edu-meta" style="margin-top:3px;">
+                Final Project (CPE599): CNN MRI Brain Tumor Classification — Grade A (82%)
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Skills ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-row"><strong>ML / Deep Learning:</strong> PyTorch, TensorFlow, Scikit-learn, Keras, Hugging Face, XGBoost, LightGBM, CNNs, Transformers, Grad-CAM, SHAP, LIME</div>
+            <div class="skill-row"><strong>Agentic &amp; Generative AI:</strong> LangChain, LangGraph, CrewAI, Phidata, RAG Systems, Latent Diffusion, SDXL, ControlNet, LoRA, Gemini Flash, Imagen 3</div>
+            <div class="skill-row"><strong>MLOps &amp; Deployment:</strong> FastAPI, Docker, MLflow, Airflow, CI/CD, AWS, Azure, GCP, Streamlit, Flask, DVC, Grafana</div>
+            <div class="skill-row"><strong>Data &amp; Analytics:</strong> Python, SQL, Pandas, NumPy, Spark, Power BI, Tableau, Snowflake, ChromaDB, Pinecone, OpenCV</div>
+        </div>
+    </section>
+
+    <!-- ── Certifications ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Certifications</h2>
+        <div class="cert-item"><strong>Agentic AI &amp; GenAI with Cloud</strong> — LangChain · LangGraph · CrewAI · AWS · GCP</div>
+        <div class="cert-item"><strong>MLOps Bootcamp</strong> — Docker · CI/CD · MLflow · Airflow · DVC · MongoDB</div>
+        <div class="cert-item"><strong>NVIDIA Deep Learning Institute</strong> — Generative AI · Synthetic Data · GPU Acceleration</div>
+        <div class="cert-item"><strong>Data Science Certifications</strong> — DataCamp · Multiple Courses &amp; Tracks</div>
+    </section>
+
+    <!-- ── Awards ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Awards &amp; Recognition</h2>
+        <div class="award-item"><strong>Tech Innovator of the Year</strong> — Department of Computer Engineering, OOU (2023)</div>
+        <div class="award-item"><strong>Exceptional Mentorship Award</strong> — Department of Computer Engineering, OOU (2023)</div>
+    </section>
+
+    <!-- ── Leadership & Volunteering ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Leadership &amp; Volunteering</h2>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">AI Engineer (Volunteer)</span>
+                <span class="exp-date">Jan 2025 – Present</span>
+            </div>
+            <div class="exp-company">Lyngual Labs · Lagos, Nigeria</div>
+            <ul class="exp-bullets">
+                <li>Volunteer contributor to open-source African language AI research, validating English/Yoruba code-switched datasets.</li>
+                <li>Supporting low-resource NLP model development to improve AI accessibility for African communities.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span class="exp-role">ML Community Manager &amp; Student Mentor</span>
+                <span class="exp-date">Jun 2023 – Jul 2024</span>
+            </div>
+            <div class="exp-company">OOU Tech Community · Ogun State, Nigeria</div>
+            <ul class="exp-bullets">
+                <li>Led AI/ML workshops and mentored 300+ undergraduate and graduate students in machine learning, data science, and software engineering.</li>
+                <li>Assisted graduate students with research projects and thesis work on AI/ML topics, helping improve project completion rates by 25%.</li>
+                <li>Increased active community engagement by 30% through structured project-based learning programs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ── Professional Memberships ── -->
+    <section class="cv-section">
+        <h2 class="cv-section-title">Memberships</h2>
+        <div class="cert-item">Graduate Member, Nigerian Society of Engineers (GMNSE)</div>
+        <div class="cert-item">Member, Data Science Nigeria</div>
+    </section>
+
+</div>
+</body>
+</html>
